@@ -1,0 +1,139 @@
+
+.skillsContainer{
+    background-color: #121111;
+    color: black;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+  
+    height: auto;
+    margin-bottom: 200px;
+  
+  }
+  
+  .skillObject{
+  
+    width: 325px;
+    height: 150px;
+    border: 1px solid black;
+    color: whitesmoke;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-bottom: 2.5%;
+    position: relative;
+    box-shadow: 250px -200px 177px -43px rgb(20, 19, 19) inset;
+  -webkit-box-shadow: 250px -200px 177px -43px rgb(20, 19, 19) inset;
+  -moz-box-shadow: 250px -200px 177px -43px rgb(20, 19, 19) inset;
+  border-radius: 10px 10px 10px 0;
+  backdrop-filter: blur(15.1px);
+  -webkit-backdrop-filter: blur(15.1px);
+  }
+  
+  .skillObject:hover{
+    box-shadow: 200px -200px 175px -89px rgba(20,19,19,1) inset;
+  -webkit-box-shadow: 200px -200px 175px -89px rgba(20,19,19,1) inset;
+  -moz-box-shadow: 200px -200px 175px -89px rgba(20,19,19,1) inset;
+    opacity: 1 !important;
+    transition: 0.5s;
+  }
+  
+  
+  .iconImg{
+    position: absolute;
+    top: -15px;
+    height: 40px;
+    width: 40px;
+    right: -10px;
+    border-radius: 10px;
+    background-color: black;
+    
+  }
+  
+  .headerName{
+    color: whitesmoke;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    padding-bottom: 0;
+  }
+  
+  .skillsText{
+    opacity: 0.75;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 13px;
+  }
+
+.skillObject.false{
+    opacity: 0;
+    visibility: hidden;
+    box-shadow: 200px -200px 400px -200px rgba(20,19,19,0.63) inset;
+-webkit-box-shadow: 200px -200px 400px -200px rgba(20,19,19,0.63) inset;
+-moz-box-shadow: 200px -200px 400px -200px rgba(20,19,19,0.63) inset;
+}
+
+
+
+
+
+
+
+.skillObject.true.I1{
+    opacity: 1;
+
+    transition: 0.75s;
+    visibility: visible;
+}
+
+.skillObject.true.I2{
+    opacity: 1;
+    transition: 1s;
+    visibility: visible;
+}
+
+.skillObject.true.I3{
+    opacity: 1;
+    transition: 1.25s;
+    visibility: visible;
+}
+
+
+
+.skillObject.true.I4{
+    opacity: 1;
+    transition: 1.5s;
+    visibility: visible;
+}
+
+.skillObject.true.I5{
+    opacity: 1;
+    transition: 1.75s;
+    visibility: visible;
+}
+
+.skillObject.true.I6{
+    opacity: 1;
+    transition: 2s;
+    visibility: visible;
+}
+
+
+
+.skillObject.true.I7{
+    opacity: 1;
+    transition: 2.25s;
+    visibility: visible;
+}
+
+.skillObject.true.I8{
+    opacity: 1;
+    transition: 2.5s;
+    visibility: visible;
+}
+
+.skillObject.true.I9{
+    opacity: 1;
+    transition: 2.5s;
+    visibility: visible;
+}
+

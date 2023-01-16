@@ -1,0 +1,320 @@
+
+.socialMoComputer{
+    height: auto;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-top: 5%;
+  
+  }
+  
+  .socialMoPhone{
+    height: auto;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    width: 27%;
+  
+  }
+  
+  .socialMoContainer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    height: auto;
+    flex-direction: row;
+    margin: 5%;
+    background-color: rgb(64, 64, 80);
+    box-shadow: 10px 10px 400px 63px rgba(0,0,0,1) inset;
+    -webkit-box-shadow: 10px 10px 400px 63px rgba(0,0,0,1) inset;
+    -moz-box-shadow: 10px 10px 400px 63px rgba(0,0,0,1) inset;
+    padding-bottom: 5%;
+  
+  }
+  
+  
+  
+  .socialMoComputerContainer{
+    
+    display: flex;
+    width: 65%;
+    flex-direction: row;
+  
+  
+  }
+  
+  .socialMoComputer{
+    width: 45%;
+  }
+  
+  .socialMoWrapperfalse{
+    background-color: #121111;
+    margin-top: 300px;
+    visibility: hidden;
+  
+    
+  
+  }
+  
+  .socialMoWrappertrue{
+    background-color: #121111;
+    visibility: visible;
+    width: 85%;
+    margin-left: 7.5%;
+    margin-top: 0px;
+    transition: 0.5s;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .socialMoText{
+    text-align: center;
+    position: absolute;
+    visibility: hidden;
+    z-index: 9;
+    transform: translateX(100%);  
+
+      margin-top: 10%;
+    margin-left: 15%;
+    margin-right: 22.5%;
+
+
+  
+  }
+  
+  
+  
+  .socialMoWrappertrue:hover > .socialMoContainer{
+    opacity: 0.3;
+    box-shadow: 10px 10px 400px -10px rgba(0,0,0,1) inset;
+  -webkit-box-shadow: 10px 10px 400px -10px rgba(0,0,0,1) inset;
+  -moz-box-shadow: 10px 10px 400px -10px rgba(0,0,0,1) inset;
+    transition: 2s;
+    
+  }
+  
+  .socialMoWrappertrue:hover > .socialMoText{
+    opacity: 1;
+    color: whitesmoke;
+    visibility:visible;
+    transform: translateX(0%);
+  
+    transition: 0.5s;
+  
+  }
+  
+  
+  
+  
+  .hoverTextIcons{
+    width: 30px;
+    height: 30px;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+  }
+  
+  
+  .hoverTextIcons.git{
+    border-radius: 50%;
+    background-color: whitesmoke;
+    position: relative;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    cursor: pointer;
+  }
+  
+  .hoverTextIconsyt{
+    color: red;
+    position: relative;
+    font-size: 40px;
+    cursor: pointer;
+  }
+  
+  .socialMoLinks{
+    width: 95%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    visibility: hidden;
+    justify-content: end;
+    z-index: 9;
+    transform: translateY(100%);
+  }
+  
+  .socialMoWrappertrue:hover  >.socialMoLinks{
+    
+    visibility: visible;
+    transform: translateY(-120%);
+    opacity: 1;
+    transition: 0.5s;
+  
+  }
+  
+  .pageLinks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-right: 2%;
+  }
+  @media screen and (max-width: 800px) {
+    .socialMoComputerContainer{
+      flex-direction: column;
+      width: 65%;
+      justify-content: space-evenly;
+      align-items: center;
+  
+    }
+    
+    
+  
+    .hoverTextHeader{
+      font-size: 20px;
+    }
+    
+    .hoverTextHeader.content{
+      font-size: 18px;
+    }
+    .hoverTextDesc.content{
+      font-size: 13px;
+    }
+  
+   
+    .icons{
+      font-size: 30px !important;
+    }
+  
+    .hoverTextDesc{
+      font-size: 15px;
+    }
+
+    
+    .hoverTextIcons.git{
+      width: 30px;
+      height: 30px;
+    }
+    .hoverTextIconsyt{
+      font-size: 40px;
+    }
+  
+  }
+  
+  @media screen and (max-width: 450px) {
+    .socialMoComputerContainer{
+      flex-direction: column;
+      width: 65%;
+      justify-content: space-evenly;
+      align-items: center;
+  
+    }
+
+    .hoverTextHeader.content{
+      font-size: 15px;
+    }
+    .hoverTextDesc.content{
+      font-size: 11px;
+    }
+  
+    .hoverTextHeader{
+      font-size: 17px;
+    }
+  
+    .hoverTextDesc{
+      font-size: 12px;
+    }
+    .hoverTextIcons.git{
+      width: 25px;
+      height: 25px;
+    }
+    .hoverTextIconsyt{
+      font-size: 35px;
+    }
+  
+  }
+  
+  
+  @media screen and (max-width: 376px) {
+    .socialMoComputerContainer{
+      flex-direction: column;
+      width: 65%;
+      justify-content: space-evenly;
+      align-items: center;
+  
+    }
+
+    .hoverTextHeader.content{
+      font-size: 11px;
+    }
+    .hoverTextDesc.content{
+      font-size: 8px;
+    }
+  
+    .hoverTextHeader{
+      font-size: 13px;
+    }
+  
+    .hoverTextDesc{
+      font-size: 9px;
+    }
+  
+    .hoverTextIcons.git{
+      width: 20px;
+      height: 20px;
+    }
+  
+    .hoverTextIcons{
+      width: 15px;
+      height: 15px;
+    }
+    .hoverTextIconsyt{
+      font-size: 25px;
+    }
+  
+  }
+  
+  @media screen and (max-width: 283px) {
+    .socialMoComputerContainer{
+      flex-direction: column;
+      width: 65%;
+      justify-content: space-evenly;
+      align-items: center;
+  
+    }
+  
+    .hoverTextHeader{
+      font-size: 11px;
+      margin-bottom: 0%;
+    }
+  
+    .hoverTextDesc{
+      font-size: 7px;
+    }
+
+    .hoverTextHeader.content{
+      font-size: 9px;
+    }
+    .hoverTextDesc.content{
+      font-size: 6px;
+    }
+
+    .socialMoText{
+      margin-top: 10%;
+      
+    }
+  
+    .hoverTextIcons.git{
+      width: 20px;
+      height: 20px;
+    }
+  
+    .hoverTextIconsyt{
+      font-size: 25px;
+    }
+}
+
+.bookstoreImg{
+    width: 90%;
+    justify-self: center;
+    margin-top: 5%;
+}
+

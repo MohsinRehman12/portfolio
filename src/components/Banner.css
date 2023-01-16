@@ -1,0 +1,95 @@
+.bannertrue{
+
+    /* ff 3.6+ */
+    background:-moz-linear-gradient(359deg, rgba(131, 17, 131, 0.7) 0%, rgba(0, 0, 255, 0.7) 100%); 
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-linear-gradient(359deg, rgba(131, 17, 131, 0.7) 0%, rgba(0, 0, 255, 0.7) 100%);
+
+    /* opera 11.10+ */
+    background:-o-linear-gradient(359deg, rgba(131, 17, 131, 0.7) 0%, rgba(0, 0, 255, 0.7) 100%);
+
+    /* ie 6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#831183', endColorstr='#0000FF', GradientType=1 );
+
+    /* ie 10+ */
+    background:-ms-linear-gradient(359deg, rgba(131, 17, 131, 0.7) 0%, rgba(0, 0, 255, 0.7) 100%);
+
+    /* global 94%+ browsers support */
+    background:linear-gradient(359deg, rgba(131, 17, 131, 0.7) 0%, rgba(0, 0, 255, 0.7) 100%);
+
+    position: relative;
+    background-color: rgb(55, 55, 55);
+    width: 100%;
+    margin-top: 0px;
+    transition: 1.25s;
+    height: auto;
+    padding-top: 20%;
+
+
+}
+
+.bannerText{
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 0%;
+}
+
+.bannerText2{
+    color: whitesmoke;
+    text-align: center;
+    opacity: 0.5;
+
+}
+
+.headerButton{
+    background-color: rgb(55, 55, 55, 0);
+    margin-left: 40%;
+    margin-top: 5%;
+    height: auto;
+    width: 20%;
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    color: white;
+}
+
+@media  screen and (max-width: 300px) {
+    .headerButton{
+        font-size: 10px;
+    }
+}
+
+@media  screen and (max-width: 252px) {
+    .headerButton{
+        font-size: 9px;
+    }
+}
+.headerButton:hover{
+    background-color: whitesmoke;
+    color: #121111;
+    transition: 0.5s;
+}
+
+.bannerfalse{
+
+    position: relative;
+    background-color: rgb(55, 55, 55);
+    width: 100%;
+    margin-top: -100px;
+
+}
+
+
+
+.wavefilltrue{
+    transition: 0.75s ease-in !important;
+
+}
+
+.bannerfalse{
+    margin-bottom: 200px;
+}
+
+.bannertrue{
+    margin-bottom: 200px;
+}

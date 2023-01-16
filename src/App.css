@@ -1,38 +1,213 @@
-.App {
-  text-align: center;
+*{
+  font-family: 'Roboto', sans-serif;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html{
+  background-color: #121111;
+}
+#root{
+  background-color: #121111;
+}
+.App{
+  background-color: #121111;
+}
+body{
+  background-color: #121111;
+  color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.banner{
+  background-color: gray;
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.skillsContainer{
+  background-color: #121111;
+  color: black;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  width: 100%;
+
+  height: auto;
+
 }
 
-.App-link {
-  color: #61dafb;
+.skillObject{
+
+  width: 325px;
+  height: 150px;
+  border: 1px solid black;
+  color: whitesmoke;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  margin-bottom: 2.5%;
+  position: relative;
+  box-shadow: 250px -200px 177px -43px rgb(20, 19, 19) inset;
+-webkit-box-shadow: 250px -200px 177px -43px rgb(20, 19, 19) inset;
+-moz-box-shadow: 250px -200px 177px -43px rgb(20, 19, 19) inset;
+border-radius: 10px 10px 10px 0;
+backdrop-filter: blur(15.1px);
+-webkit-backdrop-filter: blur(15.1px);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.skillObject:hover{
+  box-shadow: 200px -200px 175px -89px rgba(20,19,19,1) inset;
+-webkit-box-shadow: 200px -200px 175px -89px rgba(20,19,19,1) inset;
+-moz-box-shadow: 200px -200px 175px -89px rgba(20,19,19,1) inset;
+  opacity: 1 !important;
+  transition: 0.5s;
 }
+
+
+.iconImg{
+  position: absolute;
+  top: -15px;
+  height: 40px;
+  width: 40px;
+  right: -10px;
+  border-radius: 10px;
+  background-color: black;
+  
+}
+
+.headerName{
+  color: whitesmoke;
+  margin-left: 20px;
+  margin-bottom: 5px;
+  padding-bottom: 0;
+}
+
+.skillsText{
+  opacity: 0.75;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 13px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.navbarDiv{
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 9999 !important;
+  text-align: center !important;
+  background-color: rgb(0, 0, 0) !important;
+}
+
+.navbar-brand{
+  color: whitesmoke !important;
+}
+
+
+.navbar-toggler-icon{
+  color: whitesmoke !important;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+
+}
+
+button.navbar-toggler.collapsed{
+  color: none !important;
+}
+
+button.navbar-toggler{
+  color: none whitesmoke !important;
+  border: none !important;
+  
+}
+
+.navbar-toggler:focus   {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+
+.nav-link {
+  color: whitesmoke !important;
+  background: linear-gradient(to left, black 50%, whitesmoke 50%) right;
+  background-size: 200%;
+  border: none;
+  margin-left: 1%;
+
+}
+
+.nav-link:hover {
+  color: rgb(0, 0, 0) !important;
+  background-position: left;
+  transition: .5s ease-out;
+}
+
+.contactInfo{
+  display: flex;
+  color: whitesmoke;
+  text-align: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  background-color: #121111;
+}
+
+.contactHeader{
+  color: whitesmoke;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 200px;
+}
+
+
+.headerSeperator{
+  height: 1px;
+  width: 30%;
+  margin-left: 35%;
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: whitesmoke;
+  opacity: 0.5;
+  margin-bottom: 40px;
+  
+}
+
+
+.headerSeperator::before{
+    content: ""; 
+    width: 15px;
+      height: 15px;
+      
+      border-radius: 50%;
+      position: absolute;
+      margin-top: -5px;
+      display: inline-block;
+      background-color: whitesmoke;
+      opacity: 1;
+      margin-bottom: 40px;
+  
+}
+
+
+@keyframes example {
+  0%   {background-color: blue;}
+  25%  {background-color: blueviolet;}
+  50%  {background-color: purple;}
+  100% {background-color: blue}
+}
+
