@@ -1,0 +1,82 @@
+.contactBox{
+    display: flex;
+    text-align: left;
+    color: whitesmoke;
+    justify-content: space-evenly;
+    width: 75%;
+    margin-left: 12.5%;
+    padding: 0%;
+    margin-top: 4em;
+    margin-bottom: 4em;
+
+
+}
+
+.contactinfoBox{
+    display: block;
+}
+
+.infoBoxText{
+    color: white;
+    margin-bottom: 0;
+    margin-right: 0.5em;
+    font-size: 1em;
+    font-weight: 200;
+
+
+}
+
+.mailIcon{
+    color: whitesmoke;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+    opacity: 0.75;
+    margin-bottom: 0;
+    font-size: 50px;
+}
+
+.mailIcon.false{
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.mailIcon.true{
+    visibility: visible;
+    opacity: 0.75;
+    transform: translateX(0%);
+    transition: 0.9s ease-in-out;
+}
+
+
+
+.mailIcon:hover{
+    color: white;
+    opacity: 1;
+    transform: scaleX(1.1) scaleY(1.1);
+    transition: 0.5s ease-in-out;
+}
+
+
+@media screen and (max-width:1060px){
+
+    .infoBoxText{
+        color: whitesmoke;
+        margin-bottom: 0;
+        margin-right: 0.3em;
+        font-size: 0.9em;
+
+    
+    
+    }
+    
+    .mailIcon{
+        color: whitesmoke;
+        margin-right: 0.3em;
+        margin-left: 0.3em;
+        opacity: 0.5;
+        margin-bottom: 0;
+        font-size: 50px;
+    }
+    
+}

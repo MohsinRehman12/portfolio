@@ -2,7 +2,8 @@ import React from 'react'
 import "./Banner.css"
 import { useEffect, useRef, useState } from 'react';
 import Wave from 'react-wavify'
-export default function Banner() {
+
+export default function Banner({onButtonClick}) {
 
   const bannerRef = useRef();
   const [visibleBanner, setVisibileBanner] = useState(false)
@@ -23,7 +24,7 @@ export default function Banner() {
     
   }, [visibleBanner])
   
-
+  
 
   return (
     <>
@@ -31,7 +32,7 @@ export default function Banner() {
 
         <h1 className="bannerText">Mohsin Rehman</h1>
         <h3 className="bannerText2">Software Developer</h3>
-        <button className="headerButton">Resume</button>
+        <button onClick={onButtonClick} className="headerButton">Resume</button>
         <Wave classname={"wavefill"+visibleBanner} fill='#121111'
         paused={false}
         options={{

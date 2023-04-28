@@ -1,0 +1,18 @@
+
+.copyright{
+    background-color: #1a1919;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyrightText{
+    font: 1em;
+    align-self: center;
+    justify-self: center;
+}

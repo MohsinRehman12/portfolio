@@ -13,7 +13,7 @@ function NavbarDiv() {
         <Navbar.Toggle  bg="dark" aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#About">About</Nav.Link>
+            <Nav.Link href="#home">About</Nav.Link>
             <Nav.Link href="#skills">Skills</Nav.Link>
             <Nav.Link href="#projects">Projects</Nav.Link>
             <Nav.Link href="#contactme">Contact</Nav.Link>            

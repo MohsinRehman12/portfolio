@@ -1,0 +1,180 @@
+.projectContainerr{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 10em;
+    background-color: #1e1d1d;
+    align-self: center;
+  }
+  .projectTextContainerr{
+    align-self: center;
+    width: auto;
+    justify-content: center;
+    transform: translateX(25%);
+    text-align: left;
+  }
+  
+  .socialMoComputersr{
+    max-width: 552px;
+    max-height: 400px;
+    width:auto;
+    height:auto;
+    object-fit: cover;
+  }
+  
+  .projectTextHeaderr{
+    color:black;
+    font-size: 1.4em;
+    font-weight: 500;
+    padding-bottom: 0;
+    line-height: 1.5;
+  }
+  
+  .projectTextr{
+    color: black;
+    font-size: 1.2em;
+    font-weight: 200;
+    line-height: 1.3em;
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  .projectBoxr{
+    padding: 2em 1.5em;
+    padding-bottom: 0;
+    max-width: 600px;
+    height: 50%;
+  }
+  
+  .projectTechr{
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .hoverTextIconsf{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 50%;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .hoverTextIconsfyt{
+    color: red;
+    position: relative;
+    font-size: 40px;
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 1149px) {
+
+    .projectTextContainerr{
+      align-self: center;
+      width: auto;
+      max-width: 450px;
+      justify-content: center;
+      text-align: left;
+      transform: translateX(0%);
+      transform: translateY(-25%);
+      
+
+    }
+
+    .projectTextr{
+      font-size: 1em;
+    }
+
+    .projectBoxr{
+      padding: 1em 1.5em;
+      padding-bottom: 0;
+      max-width: 600px;
+      align-self: center;
+      justify-self: center;
+      width: 100%;
+      height: 50%;
+    }
+    
+  }
+
+  @media screen and (max-width: 600px) {
+
+    .projectTextContainerr{
+      align-self: center;
+      width: auto;
+      max-width: 350px;
+      justify-content: center;
+      text-align: left;
+      transform: translateX(0%);
+      transform: translateY(-25%);
+      
+
+    }
+
+    .projectTextr{
+      font-size: 0.8em;
+      font-weight: 300;
+    }
+
+    .socialMoComputersr{
+      max-width: 400px;
+      max-height: 300px;
+      width:auto;
+      height:auto;
+      object-fit: cover;
+    }
+
+    .projectBoxr{
+      padding: 1em 1.5em;
+      padding-bottom: 0;
+      max-width: 600px;
+      align-self: center;
+      justify-self: center;
+      width: 100%;
+      height: 50%;
+    }
+  }
+    @media screen and (max-width: 425px) {
+
+      .projectTextContainerr{
+        align-self: center;
+        width: auto;
+        max-width: 225px;
+        justify-content: center;
+        text-align: left;
+        transform: translateX(0%);
+        transform: translateY(-25%);
+        
+  
+      }
+  
+      .projectTextr{
+        font-size: 0.8em;
+        font-weight: 300;
+      }
+  
+      .socialMoComputersr{
+        max-width: 300px;
+        max-height: 200px;
+        width:auto;
+        height:auto;
+        object-fit: cover;
+      }
+  
+      .projectBoxr{
+        padding: 1em 1.5em;
+        padding-bottom: 0;
+        max-width: 600px;
+        align-self: center;
+        justify-self: center;
+        width: 100%;
+        height: 50%;
+      }
+    
+  }
