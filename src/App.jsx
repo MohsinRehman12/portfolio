@@ -23,6 +23,7 @@ import Bannernew from './components/Bannernew';
 import Bookstoreproj from './components/projects/Bookstoreproj';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Algovisualizer from './components/projects/Algovisualizer';
 function App() {
 
   const onButtonClick = () => {
@@ -43,9 +44,11 @@ function App() {
   const project1 = useRef();
   const project2 = useRef();
   const project3 = useRef();
+  const project4 = useRef();
   const [visibileRow1, setVisibileRow1] = useState(false)
   const [visibileRow2, setVisibileRow2] = useState(false)
   const [visibileRow3, setVisibileRow3] = useState(false)
+  const [visibileRow4, setVisibileRow4] = useState(false)
 
   useEffect(() => { 
 
@@ -82,6 +85,16 @@ function App() {
 
     observer3.observe(project3.current)
 
+    const observer4 = new IntersectionObserver((entries) => {
+      setVisibileRow4(entries[0].isIntersecting) 
+      if(entries[0].isIntersecting){
+        observer4.unobserve(project4.current)
+
+      }
+      
+    })
+
+    observer4.observe(project4.current)
 
   }, [visibileRow1])
   
@@ -112,12 +125,17 @@ function App() {
     <Grid item className={`slidein ${visibileRow1}`} ref={project1}>
     <Socialmoproj />
     </Grid>
+
     <Grid item className={`slidein2 ${visibileRow2}`} ref={project2}>
-    <Contentbasedproj />
+      <Algovisualizer />
     </Grid>
     <Grid item className={`slidein ${visibileRow3}`} ref={project3}>
+    <Contentbasedproj />
+    </Grid>
+    <Grid item className={`slidein2 ${visibileRow4}`} ref={project4}>
     <Bookstoreproj />
     </Grid>
+    
     
     </Grid>
     <hr className="componentSeperator" id="contactme" />
