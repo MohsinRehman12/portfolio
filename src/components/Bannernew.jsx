@@ -24,7 +24,7 @@ function Bannernew() {
 
     const downloadTxtFile = () => {
       fileSaver.saveAs(
-        process.env.PUBLIC_URL + "/Rehman_Mohsin_Resume.pdf",
+        process.env.PUBLIC_URL + "/Resume_Mohsin_Rehman_Summer_2023_PDF.pdf",
         "Mohsin_Rehman_Resume.pdf"
       );
     }

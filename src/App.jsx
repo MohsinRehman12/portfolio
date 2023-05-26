@@ -24,6 +24,7 @@ import Bookstoreproj from './components/projects/Bookstoreproj';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Algovisualizer from './components/projects/Algovisualizer';
+import SimplifAI from './components/projects/SimplifAI';
 function App() {
 
   const onButtonClick = () => {
@@ -45,10 +46,12 @@ function App() {
   const project2 = useRef();
   const project3 = useRef();
   const project4 = useRef();
+  const project5 = useRef();
   const [visibileRow1, setVisibileRow1] = useState(false)
   const [visibileRow2, setVisibileRow2] = useState(false)
   const [visibileRow3, setVisibileRow3] = useState(false)
   const [visibileRow4, setVisibileRow4] = useState(false)
+  const [visibileRow5, setVisibileRow5] = useState(false)
 
   useEffect(() => { 
 
@@ -96,6 +99,15 @@ function App() {
 
     observer4.observe(project4.current)
 
+    const observer5 = new IntersectionObserver((entries) => {
+      setVisibileRow5(entries[0].isIntersecting)
+      if(entries[0].isIntersecting){
+        observer5.unobserve(project5.current)
+      }
+    })
+
+    observer5.observe(project5.current)
+
   }, [visibileRow1])
   
 
@@ -127,14 +139,19 @@ function App() {
     </Grid>
 
     <Grid item className={`slidein2 ${visibileRow2}`} ref={project2}>
-      <Algovisualizer />
+      <SimplifAI />
     </Grid>
-    <Grid item className={`slidein ${visibileRow3}`} ref={project3}>
-    <Contentbasedproj />
+
+    <Grid item className={`slidein ${visibileRow5}`} ref={project5}>
+    <Algovisualizer />
     </Grid>
     <Grid item className={`slidein2 ${visibileRow4}`} ref={project4}>
     <Bookstoreproj />
     </Grid>
+    <Grid item className={`slidein ${visibileRow3}`} ref={project3}>
+    <Contentbasedproj />
+    </Grid>
+    
     
     
     </Grid>

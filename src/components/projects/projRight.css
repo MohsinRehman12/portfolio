@@ -73,7 +73,7 @@
     cursor: pointer;
   }
 
-  @media screen and (max-width: 1149px) {
+  @media screen and (max-width: 1200px) {
 
     .projectTextContainerr{
       align-self: center;
@@ -82,7 +82,7 @@
       justify-content: center;
       text-align: left;
       transform: translateX(0%);
-      transform: translateY(-25%);
+      transform: translateY(5%);
       
 
     }
