@@ -99,8 +99,8 @@
 }
 
 .imgBackground.false{
-    width: 400px;
-    max-width: 400px;
+    width: 350px;
+    max-width: 350px;
     height: 460px;
     max-height: 460px;
     margin-left: 2em;
@@ -114,8 +114,8 @@
 }
 
 .imgBackground.true{
-    width: 400px;
-    max-width: 400px;
+    width: 350px;
+    max-width: 350px;
     height: 460px;
     max-height: 460px;
     margin-left: 2em;
@@ -220,10 +220,10 @@
 @media screen and (max-width: 450px) {
     .imgBackground.true{
         justify-self: center;
-        width: 250px;
-        height: 330px;
-        max-width: 250px;
-        max-height: 360px;
+        width: 220px;
+        height: 300px;
+        max-width: 220px;
+        max-height: 330px;
     }
 }
 

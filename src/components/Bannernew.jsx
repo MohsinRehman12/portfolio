@@ -1,7 +1,7 @@
 import React from 'react';
 import './Bannernew.css';
 import Button from '@mui/material/Button';
-import Aboutimg from '../assets/about.png';
+import Aboutimg from '../assets/portfoliopfp.jpg';
 import { useRef, useEffect, useState } from 'react';
 import fileSaver from "file-saver";
 
@@ -109,7 +109,7 @@ function Bannernew() {
         <h3 className={`bannerTextProf2 ${visibileProfession2}` } ref={profession2}>Software Engineer</h3>
         <div className="bannerInfoBox">
         <p className={`bannerInfoText ${visibileInfo}` } ref={infoRef}>
-        I am a third year software engineering student at Ontario Tech University with aspirations of becoming a Full-Stack devoloper. Im passionate about designing and developing projects, and tackling problems whether they may be in the form of errors and bugs. I can adapt and learn about new environements and problems associated with them very quickly. Im continously looking for new opportunities to learn and grow as a developer.
+        I am a Fourth year software engineering student at Ontario Tech University with aspirations of becoming a Full-Stack devoloper. Im passionate about designing and developing projects, and tackling problems whether they may be in the form of errors and bugs. I can adapt and learn about new environements and problems associated with them very quickly. Im continously looking for new opportunities to learn and grow as a developer.
         </p>
         </div>
 
