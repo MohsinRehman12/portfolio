@@ -3,9 +3,14 @@ import { useState, useRef, useEffect } from 'react';
 import "./Skillbar.css"
 import "./Contact.css"
 import {AiFillMail, AiFillGithub, AiFillLinkedin} from 'react-icons/ai'
+import { Grid, Card, CardContent, Typography, Box } from '@mui/material';
+import Experience from './Experience';
 
 
 function Contact() {
+
+    
+
 
     const [isTitleVisible, setTitleVisible] = useState(false);
     const [isSubtitleVisible, setSubtitleVisible] = useState(false);
@@ -68,6 +73,10 @@ function Contact() {
 
             
         </div>
+
+        <div className="experienceSection">
+      
+    </div>
 
 
 

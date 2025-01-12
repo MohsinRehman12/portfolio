@@ -1,132 +1,132 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './Bannernew.css';
 import Button from '@mui/material/Button';
 import Aboutimg from '../assets/portfoliopfp.jpg';
-import { useRef, useEffect, useState } from 'react';
 import fileSaver from "file-saver";
+import { TypeAnimation } from 'react-type-animation';
+import { LineWeight, Margin } from '@mui/icons-material';
+
 
 function Bannernew() {
+  const title = useRef();
+  const profession1 = useRef();
+  const profession2 = useRef();
 
-    const title = useRef();
-    const profession1 = useRef();
-    const profession2 = useRef();
+  const infoRef = useRef();
+  const buttonResumeRef = useRef();
+  const imgBackgroundEff = useRef();
 
-    const infoRef = useRef();
-    const buttonResumeRef = useRef();
-    const imgBackgroundEff = useRef();
+  const [visibleTitle, setVisibleTitle] = useState(false);
+  const [visibleProfession1, setVisibleProfession1] = useState(false);
+  const [visibleProfession2, setVisibleProfession2] = useState(false);
+  const [visibleButton, setVisibleButton] = useState(false);
+  const [visibleInfo, setVisibleInfo] = useState(false);
+  const [visibleImg, setVisibleImg] = useState(false);
 
-    const [visibileTitle, setVisibileTitle] = useState(false)
-    const [visibileProfession1, setViisibileProfession1] = useState(false)
-    const [visibileProfession2, setViisibileProfession2] = useState(false)
-    const [visibileButton, setViisibileButton] = useState(false)
-    const [visibileInfo, setViisibileInfo] = useState(false)
-    const [visibileImg, setViisibileImg] = useState(false)
+  const downloadTxtFile = () => {
+    fileSaver.saveAs(
+      "/resume/Resume_Mohsin_Rehman_Winter_2025_PDF.pdf",
+      "Mohsin_Rehman_Resume.pdf"
+    );
+  };
 
-    const downloadTxtFile = () => {
-      fileSaver.saveAs(
-        process.env.PUBLIC_URL + "/Resume_Mohsin_Rehman_Summer_2023_PDF.pdf",
-        "Mohsin_Rehman_Resume.pdf"
-      );
-    }
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      setVisibleTitle(entries[0].isIntersecting);
+      if (entries[0].isIntersecting) observer.unobserve(title.current);
+    });
+    observer.observe(title.current);
 
-    useEffect(() => {
-        const observer = new IntersectionObserver((entries) => {
-            setVisibileTitle(entries[0].isIntersecting) 
-            if(entries[0].isIntersecting){
-              observer.unobserve(title.current)
-      
-            }
-            
-          })
-      
-          observer.observe(title.current)
+    const observer1 = new IntersectionObserver((entries) => {
+      setVisibleProfession1(entries[0].isIntersecting);
+      if (entries[0].isIntersecting) observer1.unobserve(profession1.current);
+    });
+    observer1.observe(profession1.current);
 
-          const observer1 = new IntersectionObserver((entries) => {
-            setViisibileProfession1(entries[0].isIntersecting) 
-            if(entries[0].isIntersecting){
-              observer1.unobserve(profession1.current)
-      
-            }
-            
-          })
-      
-          observer1.observe(profession1.current)
-          
-          const observer2 = new IntersectionObserver((entries) => {
-            setViisibileProfession2(entries[0].isIntersecting) 
-            if(entries[0].isIntersecting){
-              observer2.unobserve(profession2.current)
-      
-            }
-            
-          })
-      
-          observer2.observe(profession2.current)
+    const observer2 = new IntersectionObserver((entries) => {
+      setVisibleProfession2(entries[0].isIntersecting);
+      if (entries[0].isIntersecting) observer2.unobserve(profession2.current);
+    });
+    observer2.observe(profession2.current);
 
-          const observer3 = new IntersectionObserver((entries) => {
-            setViisibileInfo(entries[0].isIntersecting) 
-            if(entries[0].isIntersecting){
-              observer3.unobserve(infoRef.current)
-      
-            }
-            
-          })
-      
-          observer3.observe(infoRef.current)
+    const observer3 = new IntersectionObserver((entries) => {
+      setVisibleInfo(entries[0].isIntersecting);
+      if (entries[0].isIntersecting) observer3.unobserve(infoRef.current);
+    });
+    observer3.observe(infoRef.current);
 
-          const observer4 = new IntersectionObserver((entries) => {
-            setViisibileButton(entries[0].isIntersecting) 
-            if(entries[0].isIntersecting){
-              observer4.unobserve(buttonResumeRef.current)
-      
-            }
-            
-          })
-      
-          observer4.observe(buttonResumeRef.current)
+    const observer4 = new IntersectionObserver((entries) => {
+      setVisibleButton(entries[0].isIntersecting);
+      if (entries[0].isIntersecting) observer4.unobserve(buttonResumeRef.current);
+    });
+    observer4.observe(buttonResumeRef.current);
 
-          const observer5 = new IntersectionObserver((entries) => {
-            setViisibileImg(entries[0].isIntersecting) 
-            if(entries[0].isIntersecting){
-              observer5.unobserve(imgBackgroundEff.current)
-      
-            }
-            
-          })
-      
-          observer5.observe(imgBackgroundEff.current)
-
-        }, [visibileTitle])
-
+    const observer5 = new IntersectionObserver((entries) => {
+      setVisibleImg(entries[0].isIntersecting);
+      if (entries[0].isIntersecting) observer5.unobserve(imgBackgroundEff.current);
+    });
+    observer5.observe(imgBackgroundEff.current);
+  }, []);
 
   return (
-
     <div className="bannerContain">
-        <div className="bannerBoxContainer">
+      <div className="bannerBoxContainer">
         <div className="bannerBox">
-        <h1 className= {`bannerText ${visibileTitle}`} ref={title}>Mohsin Rehman</h1>
-        <h3 className={`bannerTextProf ${visibileProfession1}` } ref={profession1}>Full Stack Developer</h3>
-        <h3 className={`bannerTextProf2 ${visibileProfession2}` } ref={profession2}>Software Engineer</h3>
-        <div className="bannerInfoBox">
-        <p className={`bannerInfoText ${visibileInfo}` } ref={infoRef}>
-        I am a Fourth year software engineering student at Ontario Tech University with aspirations of becoming a Full-Stack devoloper. Im passionate about designing and developing projects, and tackling problems whether they may be in the form of errors and bugs. I can adapt and learn about new environements and problems associated with them very quickly. Im continously looking for new opportunities to learn and grow as a developer.
-        </p>
-        </div>
+          <h1 className={`bannerText ${visibleTitle ? 'true' : 'false'}`} ref={title}>
+            Mohsin Rehman
+          </h1>
 
-        <div className="buttonBox">
-        <Button onClick={downloadTxtFile} className={`buttonResume ${visibileButton}`} ref={buttonResumeRef} variant='outlined'>Download Resume</Button>
+          {/* TypeAnimation with independent visibility */}
+          <TypeAnimation
+            sequence={[
+              
+              'Full Stack Developer',
+              3000,
+              'Mobile Developer',
+              3000,
+              'Data Scientist',
+              3000,
+              'Data Analyst',
+              3000
+            ]}
+            wrapper="span"
+            speed={25}
+            deletionSpeed={50}
+            style={{ 
+              color: 'whitesmoke', 
+              fontSize: '1.8em',
+              fontWeight: 200,
+              Margin: 0,
+              transition: '0.3s 0.3s ease-in-out',
+              
+            
+            }}
+            repeat={Infinity}
+            ref={profession1}
+          />
+          
+          <h3 className={`bannerTextProf2 ${visibleProfession2 ? 'true' : 'false'}`} ref={profession2}>
+            Software Engineer
+          </h3>
+
+          <div className="bannerInfoBox">
+            <p className={`bannerInfoText ${visibleInfo ? 'true' : 'false'}`} ref={infoRef}>
+              Hi, My name is Mohsin Rehman, and I am in my final year of Software Engineering at Ontario Tech University. I am passionate about Artificial Intelligence and Application Development whether it is Web or Mobile. Additionally, I thrive in designing and developing projects, and tackling problems whether they may be in the form of errors and bugs. I can adapt and learn about new environments and problems associated with them very quickly. I am currently seeking a New Grad Software Engineering/Developer position as Full Stack Developer, Web/Mobile Developer, Data Scientist, and Data Analyst.
+            </p>
+          </div>
+
+          <div className="buttonBox">
+            <Button onClick={downloadTxtFile} className={`buttonResume ${visibleButton ? 'true' : 'false'}`} ref={buttonResumeRef} variant="outlined">
+              Download Resume
+            </Button>
+          </div>
         </div>
-        
-        </div>
+      </div>
+
+      <img className={`imgBackground ${visibleImg ? 'true' : 'false'}`} ref={imgBackgroundEff} src={Aboutimg} />
     </div>
-
-    <img className={`imgBackground ${visibileImg}`} ref={imgBackgroundEff} src={Aboutimg}/>
-    
-    
-
-    </div>
-    
-  )
+  );
 }
 
-export default Bannernew
+export default Bannernew;
+

@@ -33,7 +33,7 @@ function Contentbased() {
         
         </div>
         <p className='hoverTextDesc content'>
-        Python program that uses projections on images in a dataset to find the most similar images to a 60% accuracy rate.
+        Python program that uses projections on images in a dataset to find the most similar images to a 70% accuracy rate.
         
         </p>
 

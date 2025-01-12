@@ -29,6 +29,10 @@ function Skillsbar() {
     const [isVisible14, setVisible14] = useState(false);
     const [isVisible15, setVisible15] = useState(false);
     const [isVisible16, setVisible16] = useState(false);
+    const [isVisible17, setVisible17] = useState(false);
+    const [isVisible18, setVisible18] = useState(false);
+    const [isVisible19, setVisible19] = useState(false);
+    const [isVisible20, setVisible20] = useState(false);
 
     const domRef = useRef();
     const domRef2 = useRef();
@@ -46,12 +50,17 @@ function Skillsbar() {
     const domRef14 = useRef();
     const domRef15 = useRef();
     const domRef16 = useRef();
+    const domRef17 = useRef();
+    const domRef18 = useRef();
+    const domRef19 = useRef();
+    const domRef20 = useRef();
 
     const domRefTitle = useRef();
     const domRefTitle2 = useRef();
     const domRefSubtitle = useRef();
     const domRefSubtitle2 = useRef();
 
+    
     useEffect(() => { 
 
         const titleObserver = new IntersectionObserver((entries) => {
@@ -261,6 +270,51 @@ function Skillsbar() {
         )
         observer16.observe(domRef16.current)
 
+        const observer17 = new IntersectionObserver((entries) => {
+            setVisible17(entries[0].isIntersecting) 
+          if(entries[0].isIntersecting){
+            observer17.unobserve(domRef17.current)
+    
+          }
+          
+        }
+        )
+        observer17.observe(domRef17.current)
+
+        const observer18 = new IntersectionObserver((entries) => {
+            setVisible18(entries[0].isIntersecting) 
+          if(entries[0].isIntersecting){
+            observer18.unobserve(domRef18.current)
+    
+          }
+          
+        }
+        )
+        observer18.observe(domRef18.current)
+
+        const observer19 = new IntersectionObserver((entries) => {
+            setVisible19(entries[0].isIntersecting) 
+          if(entries[0].isIntersecting){
+            observer19.unobserve(domRef19.current)
+    
+          }
+          
+        }
+        )
+        observer19.observe(domRef19.current)
+
+        const observer20 = new IntersectionObserver((entries) => {
+            setVisible20(entries[0].isIntersecting) 
+          if(entries[0].isIntersecting){
+            observer20.unobserve(domRef20.current)
+    
+          }
+          
+        }
+        )
+        observer20.observe(domRef20.current)
+
+
 
     }, [isVisible])
 
@@ -269,7 +323,7 @@ function Skillsbar() {
   return (
 <>
     <h1 className={`skillsTitle ${isTitleVisible}`} ref={domRefTitle}>Skills</h1>
-    <h3 className={`skillsSubTitle ${isSubtitleVisible}`} ref={domRefSubtitle}>Below you will find some of the languages, framworks, and technologies im familiar with </h3>
+    <h3 className={`skillsSubTitle ${isSubtitleVisible}`} ref={domRefSubtitle}>Below you will find some of the languages, frameworks, and technologies I'm familiar with </h3>
     <Grid className='iconGrid' container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
     <Grid className={`itemBoxSlot ${isVisible} i1`} ref={domRef} item xs={3}>
     <Item>
@@ -320,8 +374,8 @@ function Skillsbar() {
   <Grid className={`itemBoxSlot ${isVisible6} i6`} ref={domRef6} item xs={3}>
   <Item>
     <div className="iconBox">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-plain.svg" width={60} className='iconsImg'/>
-    <h3 className='iconText'>C</h3>
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" width={60} className='iconsImg'/>
+    <h3 className='iconText'>NextJS</h3>
 
     </div>
     </Item>
@@ -331,7 +385,7 @@ function Skillsbar() {
     <Item>
         <div className="iconBox">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-plain.svg" width={60} className='iconsImg'/>
-        <h3 className='iconText'>C++</h3>
+        <h3 className='iconText'>C/C++</h3>
 
         </div>
     </Item>
@@ -350,7 +404,7 @@ function Skillsbar() {
   <Grid className={`itemBoxSlot ${isVisible9} i9`} ref={domRef9} item xs={3}>
     <Item>
         <div className="iconBox">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-plain.svg" width={60} className='iconsImg'/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-original.svg" width={60} className='iconsImg'/>
         <h3 className='iconText'>Ubuntu</h3>
 
         </div>
@@ -425,20 +479,70 @@ function Skillsbar() {
   <Grid className={`itemBoxSlot ${isVisible16} i16`} ref={domRef16} item xs={3}>
     <Item>
         <div className="iconBox">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg" width={60} className='iconsImg'/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" width={60} className='iconsImg'/>
         <h3 className='iconText'>PHP</h3>
 
         </div>
     </Item>
   </Grid>
 
+  <Grid className={`itemBoxSlot ${isVisible17} i17`} ref={domRef17} item xs={3}>
+    <Item>
+        <div className="iconBox">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/androidstudio/androidstudio-plain.svg" width={60} className='iconsImg'/>
+        <h3 className='iconText'>Android Studio</h3>
+
+        </div>
+    </Item>
+  </Grid>
+
+  <Grid className={`itemBoxSlot ${isVisible18} i18`} ref={domRef18} item xs={3}>
+    <Item>
+        <div className="iconBox">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg" width={60} className='iconsImg'/>
+        <h3 className='iconText'>Firebase</h3>
+
+        </div>
+    </Item>
+  </Grid>
+
+  <Grid className={`itemBoxSlot ${isVisible19} i19`} ref={domRef19} item xs={3}>
+    <Item>
+        <div className="iconBox">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/solidity/solidity-plain.svg" width={60} className='iconsImg'/>
+        <h3 className='iconText'>Solidity</h3>
+
+        </div>
+    </Item>
+  </Grid>
+
+  <Grid className={`itemBoxSlot ${isVisible20} i20`} ref={domRef20} item xs={3}>
+    <Item>
+        <div className="iconBox">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-plain.svg" width={60} className='iconsImg'/>
+        <h3 className='iconText'>Flutter</h3>
+
+        </div>
+  Hd flix
+
+
+
+
+
+  
+    </Item>
+  </Grid>
+
+  
+
+  
   
 
 </Grid>
-<hr className="componentSeperator" id="projects" />
+<hr className="componentSeperator" id="experience" />
 
-<h1 className={`skillsTitle proj ${isTitleVisible2}`}  ref={domRefTitle2}>Projects</h1>
-    <h3 className={`skillsSubTitle proj ${isSubtitleVisible2}`} ref={domRefSubtitle2}>Below are some of the projects that I've worked on and descriptions about them  </h3>
+<h1 className={`skillsTitle proj ${isTitleVisible2}`}  ref={domRefTitle2}>Experience</h1>
+    <h3 className={`skillsSubTitle proj ${isSubtitleVisible2}`} ref={domRefSubtitle2}>Below are some of the places that I have worked and gained experience from. </h3>
 </>
   )
 }

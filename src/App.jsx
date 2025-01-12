@@ -25,6 +25,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Algovisualizer from './components/projects/Algovisualizer';
 import SimplifAI from './components/projects/SimplifAI';
+import Experience from './components/Experience';
 function App() {
 
   const onButtonClick = () => {
@@ -113,12 +114,14 @@ function App() {
 
   return (
     <div id="home">
+    
     <NavbarDiv />
     <Bannernew />
     <hr className="componentSeperator" id="skills" />
 
 
     <Skillsbar/>
+    <Experience />
 
 
     <div className="App">
@@ -156,6 +159,7 @@ function App() {
     
     </Grid>
     <hr className="componentSeperator" id="contactme" />
+    
 
     <Contact />  
 

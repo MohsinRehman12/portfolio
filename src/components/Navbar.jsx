@@ -15,6 +15,7 @@ function NavbarDiv() {
           <Nav className="me-auto">
             <Nav.Link href="#home">About</Nav.Link>
             <Nav.Link href="#skills">Skills</Nav.Link>
+            <Nav.Link href="#experience">Experience</Nav.Link>
             <Nav.Link href="#projects">Projects</Nav.Link>
             <Nav.Link href="#contactme">Contact</Nav.Link>            
           </Nav>

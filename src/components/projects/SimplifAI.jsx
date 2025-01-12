@@ -24,7 +24,7 @@ function SimplifAI() {
         <p className="projectTextHeaderr"> SimplifAI'd </p>
         <p className='projectTextr'> 
         
-        SimplifAI'd is an article simplifying tool developed using  the advanced GPT-4 Model. Its purpose is to make complex articles easier to understand. Users can simply input the URL of an article, and the tool will generate a concise and accurate summary of the content. This helps users save time and quickly grasp the main points of an article without having to read through the entire text.
+        SimplifAI'd is an article simplifying tool developed using the advanced GPT-4 Model. Its purpose is to make complex articles easier to understand. Users can simply input the URL of an article, and the tool will generate a concise and accurate summary of the content. This helps users save time and quickly grasp the main points of an article without having to read through the entire text.
         </p>
     
         <div className="projectTechr">

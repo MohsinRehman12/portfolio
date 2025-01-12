@@ -131,6 +131,25 @@
     transition: 0.5s 1.5s ease-in-out;
 }
 
+.itemBoxSlot.true.i17{
+    transition: 0.5s 1.6s ease-in-out;
+}
+
+.itemBoxSlot.true.i18{
+    transition: 0.5s 1.7s ease-in-out;
+}
+
+.itemBoxSlot.true.i19{
+    transition: 0.5s 1.8s ease-in-out;
+}
+
+.itemBoxSlot.true.i20{
+    transition: 0.5s 1.9s ease-in-out;
+}
+
+
+
+
 .skillsTitle.false, .skillsSubTitle.false{
     visibility: hidden;
     opacity: 0;
