@@ -523,7 +523,6 @@ function Skillsbar() {
         <h3 className='iconText'>Flutter</h3>
 
         </div>
-  Hd flix
 
 
 
