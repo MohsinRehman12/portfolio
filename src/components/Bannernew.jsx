@@ -24,10 +24,7 @@ function Bannernew() {
   const [visibleImg, setVisibleImg] = useState(false);
 
   const downloadTxtFile = () => {
-    fileSaver.saveAs(
-      "/resume/Resume_Mohsin_Rehman_2025.pdf",
-      "Mohsin_Rehman_Resume.pdf"
-    );
+      window.location.href = "https://mohsinrehman.me/portfolio/resume/Resume_Mohsin_Rehman_2025.pdf";
   };
 
   useEffect(() => {
