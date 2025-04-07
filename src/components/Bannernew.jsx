@@ -25,7 +25,7 @@ function Bannernew() {
 
   const downloadTxtFile = () => {
     fileSaver.saveAs(
-      "/resume/Resume_Mohsin_Rehman_Winter_2025_PDF.pdf",
+      "/resume/Resume_Mohsin_Rehman_2025.pdf",
       "Mohsin_Rehman_Resume.pdf"
     );
   };
