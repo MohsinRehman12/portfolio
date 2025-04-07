@@ -19,11 +19,11 @@ function Contentbasedproj() {
           borderRadius: 1,
           boxShadow: 3,
         }}>
-        <p className="projectTextHeader"> Content Based Image Retrieval </p>
-        <p className='projectText'> Python program that uses projections on images in a dataset to find the most similar images to a 60% accuracy rate. Incorporates heuristic comparisions and techniques such as manhattan distance, and projection mapping.</p>
+        <p className="projectTextHeader"> NBA Linuep Predictor </p>
+        <p className='projectText'> Machine learning model using Scikit-learn and pandas to predict missing NBA lineup players, achieving 81% accuracy and F1-score on over 1000 lineups from 2009-2016.</p>
     
         <div className="projectTech">
-        <a className='pageLinks' href='https://github.com/MohsinRehman12/ContentBasedImageRetrieval'> <img className='hoverTextIconsf git' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" /></a>
+        <a className='pageLinks' href='https://github.com/MohsinRehman12/NBA-Lineup-prediction'> <img className='hoverTextIconsf git' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" /></a>
         </div>
         </Box>
         </div>

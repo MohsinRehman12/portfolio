@@ -5,7 +5,7 @@ function Footer() {
   return (
     <div className='copyright'>
         <p className="copyrightText">
-        © Copyright Mohsin Rehman 2023. All Rights Reserved
+        © Copyright Mohsin Rehman 2025. All Rights Reserved
         </p>
     </div>
   )
